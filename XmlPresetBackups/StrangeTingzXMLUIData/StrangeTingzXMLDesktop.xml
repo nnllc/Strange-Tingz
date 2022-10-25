@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptImage" id="Background" x="0.0" y="0.0" width="1200.0"
+             height="700.0" fileName="{PROJECT_FOLDER}BG7.png"/>
+  <Component type="ScriptSlider" id="leftMeter" x="3.0" y="45.0" filmstripImage="{PROJECT_FOLDER}VUleft-75frm4.png"
+             width="450.0" height="50.0" numStrips="75.0" scaleFactor="0.5"/>
+  <Component type="ScriptSlider" id="rightMeter" x="756.0" y="45.0" filmstripImage="{PROJECT_FOLDER}VUright-75frm4.png"
+             width="450.0" height="50.0" numStrips="75.0" scaleFactor="0.5"/>
+  <Component type="ScriptButton" id="WebsiteButton" x="1162.0" y="663.0" width="29.0"
+             height="29.0" filmstripImage="{PROJECT_FOLDER}Websitebutton.png"
+             scaleFactor="0.300000011920929" isPluginParameter="1" saveInPreset="0"
+             pluginParameterName="Visit Website" tooltip="Visit Website"/>
+  <Component type="ScriptFloatingTile" id="TooltipTile" x="70.0" y="668.0"
+             ContentType="TooltipPanel" bgColour="0" itemColour="16777215"
+             itemColour2="0" textColour="4292927712" width="381.0" height="20.0"/>
+  <Component type="ScriptPanel" id="SamplerPanel0" x="0.0" y="88.0" width="300.0"
+             height="310.0" bgColour="0" itemColour="0" itemColour2="0" textColour="0">
+    <Component type="ScriptLabel" id="Attacklab1" x="15.0" y="288.0" width="50.0"
+               height="15.0" text="ATTACK" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel0"/>
+    <Component type="ScriptLabel" id="Holdlab1" x="70.0" y="288.0" width="50.0"
+               height="15.0" text="HOLD" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel0"/>
+    <Component type="ScriptLabel" id="Decaylab1" x="126.0" y="288.0" width="50.0"
+               height="15.0" text="DECAY" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel0"/>
+    <Component type="ScriptLabel" id="Sustainlab1" x="182.0" y="288.0" width="50.0"
+               height="15.0" text="SUSTAIN" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel0"/>
+    <Component type="ScriptLabel" id="Releaselab1" x="238.0" y="288.0" width="50.0"
+               height="15.0" text="RELEASE" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel0"/>
+    <Component type="ScriptFloatingTile" id="SamplerAnalyser0" x="20.0" y="96.0"
+               ContentType="AudioAnalyser" bgColour="0" itemColour="4294947525"
+               itemColour2="0" textColour="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Analyser0&quot;,&#10;  &quot;Index&quot;: 1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               width="260.0" height="57.0" parentComponent="SamplerPanel0"/>
+    <Component type="ScriptFloatingTile" id="AHDSRView0" x="20.0" y="193.0"
+               ContentType="AHDSRGraph" bgColour="2434341" itemColour="16757445"
+               itemColour2="4294947525" textColour="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;AHDSREnvelope0&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               width="259.0" height="55.0" parentComponent="SamplerPanel0"/>
+    <Component type="ScriptButton" id="OneShotButton1" x="70.0" y="161.0" filmstripImage="{PROJECT_FOLDER}OneShotbutt.png"
+               scaleFactor="0.02999999932944775" width="67.0" height="30.0"
+               parentComponent="SamplerPanel0" processorId="Sampler0" parameterId="OneShot"
+               isPluginParameter="1" pluginParameterName="One Shot Enable - Sampler 1"
+               tooltip="One Shot Enable - Sampler 1"/>
+    <Component type="ScriptButton" id="ReverseButton1" x="163.0" y="161.0" filmstripImage="{PROJECT_FOLDER}Reversebutt.png"
+               scaleFactor="0.02999999932944775" width="67.0" height="30.0"
+               parentComponent="SamplerPanel0" processorId="Sampler0" parameterId="Reversed"
+               isPluginParameter="1" pluginParameterName="Reverse Enable - Sampler 1"
+               tooltip="Reverse Enable - Sampler 1"/>
+    <Component type="ScriptSlider" id="Samplerknb1" x="26.0" y="260.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel0" processorId="AHDSREnvelope0"
+               parameterId="Attack" mode="Time" max="20000.0" stepSize="1.0"
+               suffix=" ms" middlePosition="5000.0" defaultValue="20.0" isPluginParameter="1"
+               showValuePopup="Below" pluginParameterName="Attack - Sampler 1"
+               tooltip="Attack - Sampler 1"/>
+    <Component type="ScriptSlider" id="Samplerknb7" x="81.0" y="260.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel0" processorId="AHDSREnvelope0"
+               parameterId="Hold" mode="Time" max="20000.0" stepSize="1.0" suffix=" ms"
+               middlePosition="5000.0" isPluginParameter="1" showValuePopup="Below"
+               pluginParameterName="Hold - Sampler 1" tooltip="Hold - Sampler 1"/>
+    <Component type="ScriptSlider" id="Samplerknb8" x="137.0" y="260.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel0" processorId="AHDSREnvelope0"
+               parameterId="Decay" mode="Time" max="20000.0" stepSize="1.0"
+               suffix=" ms" middlePosition="5000.0" isPluginParameter="1" showValuePopup="Below"
+               pluginParameterName="Decay - Sampler 1" tooltip="Decay - Sampler 1"/>
+    <Component type="ScriptSlider" id="Samplerknb9" x="192.0" y="260.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel0" processorId="AHDSREnvelope0"
+               parameterId="Sustain" mode="Decibel" min="-100.0" max="0.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-50.0" isPluginParameter="1" showValuePopup="Below"
+               pluginParameterName="Sustain - Sampler 1" tooltip="Sustain - Sampler 1"/>
+    <Component type="ScriptSlider" id="Samplerknb10" x="248.0" y="260.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel0" processorId="AHDSREnvelope0"
+               parameterId="Release" mode="Time" max="20000.0" stepSize="1.0"
+               suffix=" ms" middlePosition="5000.0" defaultValue="50.0" isPluginParameter="1"
+               showValuePopup="Below" pluginParameterName="Release - Sampler 1"
+               tooltip="Release - Sampler 1"/>
+    <Component type="ScriptPanel" id="EQPanel0" x="0.0" y="-2.0" width="300.0"
+               height="315.0" bgColour="0" itemColour="0" itemColour2="0" textColour="0"
+               parentComponent="SamplerPanel0" visible="0">
+      <Component type="ScriptImage" id="EQBackground0" x="0.0" y="2.0" parentComponent="EQPanel0"
+                 width="300.0" height="307.0" fileName="{PROJECT_FOLDER}EQBG.png"
+                 scale="0.5"/>
+      <Component type="ScriptFloatingTile" id="SamplerEQ0" x="18.0" y="97.0" parentComponent="EQPanel0"
+                 bgColour="0" itemColour2="4294947525" itemColour="0" ContentType="DraggableFilterPanel"
+                 Data="{&#10;  &quot;ProcessorId&quot;: &quot;SamplerEQ0&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+                 textColour="1004198618" width="265.0" height="155.0" itemColour3="1660944383"/>
+    </Component>
+    <Component type="ScriptButton" id="EQSwitch0" x="268.0" y="13.0" bgColour="0"
+               itemColour="0" itemColour2="0" textColour="0" filmstripImage="{PROJECT_FOLDER}EQbutton1.png"
+               height="22.0" width="22.0" scaleFactor="0.699999988079071" parentComponent="SamplerPanel0"
+               isPluginParameter="1" saveInPreset="0" pluginParameterName="EQ Switch - Sampler 1"
+               tooltip="EQ Switch - Sampler 1"/>
+    <Component type="ScriptComboBox" id="SamplerSelection0" x="40.0" y="12.0"
+               max="79" width="221.0" height="25.0" bgColour="0" itemColour="0"
+               itemColour2="0" textColour="4294947525" parentComponent="SamplerPanel0"
+               items="BAS Beach Boiz&#10;BAS Buster Boi&#10;BAS Darksiders&#10;BAS Electric Pluck&#10;BAS Quick Hitter&#10;BAS Synth Whistler&#10;BAS Synthtex&#10;BAS The Slaps&#10;BAS Used Cars&#10;BASS Barney Rubble&#10;BEL Brassy Mallet&#10;BEL Chirpy&#10;BEL Churchy&#10;BEL Classic E Bell&#10;BEL Ding Dong&#10;BEL Glass House&#10;BEL Go To Church&#10;BEL Rosey Ringer&#10;BEL Summer Love&#10;BEL Tin Smack&#10;BEL Totally Tubular&#10;BEL Trippi Sticks&#10;GTR Big Dreams&#10;GTR Clean Pluck&#10;GTR Cyber Pluck&#10;GTR Ethnic Pluck&#10;GTR Fuzzy Wuzzy&#10;GTR Plate Bender&#10;GTR Steel String&#10;GTR Trippy Electric&#10;HRN Little Brasscals&#10;HRN Lofi Horn&#10;HRN Rusty Bone&#10;HRN Weird Looper&#10;KEY Classic E Piano&#10;KEY Classic Waves&#10;KEY Clavisso&#10;KEY DX7 E Piano&#10;KEY Dirty Organ&#10;KEY Failing Organ&#10;KEY Hades Organ&#10;KEY Illness Piano&#10;KEY Organ Donor&#10;KEY Pretty Kitty&#10;KEY Real Fakey&#10;KEY Ringer Organ&#10;KEY Toybox&#10;KEY Zingers&#10;MAL Sunshine&#10;PAD Angelica&#10;PAD Bloody Moons&#10;PAD Buzzing Angels&#10;PAD Ill Minded&#10;PAD Organ Effect&#10;PAD Pluck Texture&#10;PAD Rising Star&#10;PAD Rose Gold&#10;PAD Soso Cold&#10;PAD The Fallen&#10;PAD Tripster&#10;STR MediString&#10;STR MediString2&#10;STR Sloppy&#10;STR Strings Of Fire&#10;SYN Castles And Dragons&#10;SYN Gameboi&#10;SYN Leader&#10;SYN Robo Talk&#10;SYN Simple Syns&#10;SYN Synergy&#10;SYN Tektron&#10;SYN Ting Ting Synth&#10;SYN Wibble Voices&#10;SYN Zapper&#10;VOC Choir Vocals&#10;VOC Dark Night&#10;VOC Head Voices&#10;WND Dixie Flute&#10;WND Fun Flute"
+               isPluginParameter="1" pluginParameterName="Sample Selection - Sampler 1"
+               tooltip="Sample Selection - Sampler 1"/>
+    <Component type="ScriptSlider" id="Samplerknb11" x="38.0" y="49.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" width="27.0" height="27.0" parentComponent="SamplerPanel0"
+               processorId="SamplerGain0" parameterId="Gain" mode="Decibel"
+               min="-100.0" max="36.0" stepSize="0.1000000014901161" suffix=" dB"
+               middlePosition="-18.0" defaultValue="-18.0" scaleFactor="0.5"
+               isPluginParameter="1" showValuePopup="Below" pluginParameterName="Gain - Sampler 1"
+               tooltip="Gain - Sampler 1"/>
+    <Component type="ScriptSlider" id="Samplerknb12" x="93.0" y="49.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel0" processorId="SamplerGain0" parameterId="Balance"
+               mode="Pan" min="-100.0" max="100.0" stepSize="1.0" suffix="L"
+               middlePosition="0.0" isPluginParameter="1" showValuePopup="Below"
+               pluginParameterName="Pan - Sampler 1" tooltip="Pan - Sampler 1"/>
+    <Component type="ScriptSlider" id="Samplerknb13" x="181.0" y="49.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel0" processorId="Transposer0" parameterId="TransposeAmount"
+               min="-24.0" max="24.0" middlePosition="0.0" isPluginParameter="1"
+               showValuePopup="Below" pluginParameterName="Transpose (semi) - Sampler 1"
+               tooltip="Transpose (semi) - Sampler 1" stepSize="1.0"/>
+    <Component type="ScriptSlider" id="Samplerknb14" x="236.0" y="49.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel0" processorId="MidiController0"
+               parameterId="Intensity" min="-0.07999999821186066" max="0.07999999821186066"
+               middlePosition="0.0" isPluginParameter="1" pluginParameterName="Detune (cents) - Sampler 1"
+               tooltip="Detune (cents) - Sampler 1"/>
+    <Component type="ScriptLabel" id="Gainlab1" x="27.0" y="77.0" width="50.0"
+               height="15.0" text="GAIN" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel0"/>
+    <Component type="ScriptLabel" id="Panlab1" x="82.0" y="77.0" width="50.0"
+               height="15.0" text="PAN" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel0"/>
+    <Component type="ScriptLabel" id="Translab1" x="171.0" y="77.0" width="50.0"
+               height="15.0" text="TRANS" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel0"/>
+    <Component type="ScriptLabel" id="Detunelab1" x="225.0" y="77.0" width="50.0"
+               height="15.0" text="DETUNE" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel0"/>
+  </Component>
+  <Component type="ScriptPanel" id="SamplerPanel1" x="299.0" y="88.0" width="300.0"
+             height="310.0" bgColour="0" itemColour="0" itemColour2="0" textColour="0">
+    <Component type="ScriptLabel" id="Releaselab2" x="239.0" y="288.0" width="50.0"
+               height="15.0" text="RELEASE" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel1"/>
+    <Component type="ScriptLabel" id="Sustainlab2" x="183.0" y="288.0" width="50.0"
+               height="15.0" text="SUSTAIN" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel1"/>
+    <Component type="ScriptLabel" id="Decaylab2" x="127.0" y="288.0" width="50.0"
+               height="15.0" text="DECAY" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel1"/>
+    <Component type="ScriptLabel" id="Holdlab2" x="71.0" y="288.0" width="50.0"
+               height="15.0" text="HOLD" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel1"/>
+    <Component type="ScriptLabel" id="Attacklab2" x="16.0" y="288.0" width="50.0"
+               height="15.0" text="ATTACK" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel1"/>
+    <Component type="ScriptFloatingTile" id="SamplerAnalyser1" x="21.0" y="96.0"
+               ContentType="AudioAnalyser" bgColour="0" itemColour="4294947525"
+               itemColour2="0" textColour="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Analyser1&quot;,&#10;  &quot;Index&quot;: 1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               width="260.0" height="57.0" parentComponent="SamplerPanel1" visible="0"/>
+    <Component type="ScriptFloatingTile" id="AHDSRView1" x="21.0" y="193.0"
+               ContentType="AHDSRGraph" bgColour="2434341" itemColour="16757445"
+               itemColour2="4294947525" textColour="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;AHDSREnvelope1&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               width="259.0" height="55.0" parentComponent="SamplerPanel1"/>
+    <Component type="ScriptButton" id="OneShotButton2" x="71.0" y="161.0" filmstripImage="{PROJECT_FOLDER}OneShotbutt.png"
+               scaleFactor="0.02999999932944775" width="67.0" height="30.0"
+               parentComponent="SamplerPanel1" processorId="Sampler1" parameterId="OneShot"
+               isPluginParameter="1" pluginParameterName="One Shot Enable - Sampler 2"
+               tooltip="One Shot Enable - Sampler 2"/>
+    <Component type="ScriptButton" id="ReverseButton2" x="164.0" y="161.0" filmstripImage="{PROJECT_FOLDER}Reversebutt.png"
+               scaleFactor="0.02999999932944775" width="67.0" height="30.0"
+               parentComponent="SamplerPanel1" processorId="Sampler1" parameterId="Reversed"
+               isPluginParameter="1" pluginParameterName="Reverse Enable - Sampler 2"
+               tooltip="Reverse Enable - Sampler 2"/>
+    <Component type="ScriptSlider" id="Samplerknb19" x="27.0" y="260.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel1" processorId="AHDSREnvelope1"
+               parameterId="Attack" mode="Time" max="20000.0" stepSize="1.0"
+               suffix=" ms" middlePosition="5000.0" defaultValue="20.0" isPluginParameter="1"
+               showValuePopup="Below" pluginParameterName="Attack - Sampler 2"
+               tooltip="Attack - Sampler 2"/>
+    <Component type="ScriptSlider" id="Samplerknb20" x="82.0" y="260.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel1" processorId="AHDSREnvelope1"
+               parameterId="Hold" mode="Time" max="20000.0" stepSize="1.0" suffix=" ms"
+               middlePosition="5000.0" isPluginParameter="1" showValuePopup="Below"
+               pluginParameterName="Hold - Sampler 2" tooltip="Hold - Sampler 2"/>
+    <Component type="ScriptSlider" id="Samplerknb21" x="138.0" y="260.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel1" processorId="AHDSREnvelope1"
+               parameterId="Decay" mode="Time" max="20000.0" stepSize="1.0"
+               suffix=" ms" middlePosition="5000.0" isPluginParameter="1" showValuePopup="Below"
+               pluginParameterName="Decay - Sampler 2" tooltip="Decay - Sampler 2"/>
+    <Component type="ScriptSlider" id="Samplerknb22" x="193.0" y="260.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel1" processorId="AHDSREnvelope1"
+               parameterId="Sustain" mode="Decibel" min="-100.0" max="0.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-50.0" isPluginParameter="1" showValuePopup="Below"
+               pluginParameterName="Sustain - Sampler 2" tooltip="Sustain - Sampler 2"/>
+    <Component type="ScriptSlider" id="Samplerknb23" x="249.0" y="260.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel1" processorId="AHDSREnvelope1"
+               parameterId="Release" mode="Time" max="20000.0" stepSize="1.0"
+               suffix=" ms" middlePosition="5000.0" defaultValue="50.0" isPluginParameter="1"
+               showValuePopup="Below" pluginParameterName="Release - Sampler 2"
+               tooltip="Release - Sampler 2"/>
+    <Component type="ScriptPanel" id="EQPanel1" x="1.0" y="-2.0" width="300.0"
+               height="315.0" bgColour="0" itemColour="0" itemColour2="0" textColour="0"
+               parentComponent="SamplerPanel1" visible="0">
+      <Component type="ScriptImage" id="EQBackground1" x="0.0" y="2.0" parentComponent="EQPanel1"
+                 width="300.0" height="307.0" fileName="{PROJECT_FOLDER}EQBG.png"
+                 scale="0.5"/>
+      <Component type="ScriptFloatingTile" id="SamplerEQ1" x="18.0" y="97.0" parentComponent="EQPanel1"
+                 bgColour="0" itemColour2="4294947525" itemColour="0" ContentType="DraggableFilterPanel"
+                 Data="{&#10;  &quot;ProcessorId&quot;: &quot;SamplerEQ1&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+                 textColour="1004198618" width="265.0" height="155.0" itemColour3="1660944383"/>
+    </Component>
+    <Component type="ScriptButton" id="EQSwitch1" x="270.0" y="13.0" bgColour="0"
+               itemColour="0" itemColour2="0" textColour="0" filmstripImage="{PROJECT_FOLDER}EQbutton1.png"
+               height="22.0" width="22.0" scaleFactor="0.699999988079071" parentComponent="SamplerPanel1"
+               isPluginParameter="1" saveInPreset="0" pluginParameterName="EQ Switch - Sampler 2"
+               tooltip="EQ Switch - Sampler 2"/>
+    <Component type="ScriptComboBox" id="SamplerSelection1" x="41.0" y="12.0"
+               max="79" width="221.0" height="25.0" bgColour="0" itemColour="0"
+               itemColour2="0" textColour="4294947525" parentComponent="SamplerPanel1"
+               items="BAS Beach Boiz&#10;BAS Buster Boi&#10;BAS Darksiders&#10;BAS Electric Pluck&#10;BAS Quick Hitter&#10;BAS Synth Whistler&#10;BAS Synthtex&#10;BAS The Slaps&#10;BAS Used Cars&#10;BASS Barney Rubble&#10;BEL Brassy Mallet&#10;BEL Chirpy&#10;BEL Churchy&#10;BEL Classic E Bell&#10;BEL Ding Dong&#10;BEL Glass House&#10;BEL Go To Church&#10;BEL Rosey Ringer&#10;BEL Summer Love&#10;BEL Tin Smack&#10;BEL Totally Tubular&#10;BEL Trippi Sticks&#10;GTR Big Dreams&#10;GTR Clean Pluck&#10;GTR Cyber Pluck&#10;GTR Ethnic Pluck&#10;GTR Fuzzy Wuzzy&#10;GTR Plate Bender&#10;GTR Steel String&#10;GTR Trippy Electric&#10;HRN Little Brasscals&#10;HRN Lofi Horn&#10;HRN Rusty Bone&#10;HRN Weird Looper&#10;KEY Classic E Piano&#10;KEY Classic Waves&#10;KEY Clavisso&#10;KEY DX7 E Piano&#10;KEY Dirty Organ&#10;KEY Failing Organ&#10;KEY Hades Organ&#10;KEY Illness Piano&#10;KEY Organ Donor&#10;KEY Pretty Kitty&#10;KEY Real Fakey&#10;KEY Ringer Organ&#10;KEY Toybox&#10;KEY Zingers&#10;MAL Sunshine&#10;PAD Angelica&#10;PAD Bloody Moons&#10;PAD Buzzing Angels&#10;PAD Ill Minded&#10;PAD Organ Effect&#10;PAD Pluck Texture&#10;PAD Rising Star&#10;PAD Rose Gold&#10;PAD Soso Cold&#10;PAD The Fallen&#10;PAD Tripster&#10;STR MediString&#10;STR MediString2&#10;STR Sloppy&#10;STR Strings Of Fire&#10;SYN Castles And Dragons&#10;SYN Gameboi&#10;SYN Leader&#10;SYN Robo Talk&#10;SYN Simple Syns&#10;SYN Synergy&#10;SYN Tektron&#10;SYN Ting Ting Synth&#10;SYN Wibble Voices&#10;SYN Zapper&#10;VOC Choir Vocals&#10;VOC Dark Night&#10;VOC Head Voices&#10;WND Dixie Flute&#10;WND Fun Flute"
+               isPluginParameter="1" pluginParameterName="Sample Selection - Sampler 2"
+               tooltip="Sample Selection - Sampler 2"/>
+    <Component type="ScriptSlider" id="Samplerknb15" x="41.0" y="49.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel1" min="-100.0" max="36.0" mode="Decibel"
+               middlePosition="-18.0" defaultValue="-18.0" processorId="SamplerGain1"
+               parameterId="Gain" isPluginParameter="1" showValuePopup="Below"
+               pluginParameterName="Gain - Sampler 2" tooltip="Gain - Sampler 2"/>
+    <Component type="ScriptSlider" id="Samplerknb16" x="96.0" y="49.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel1" processorId="SamplerGain1" parameterId="Balance"
+               mode="Pan" min="-100.0" max="100.0" stepSize="1.0" suffix="L"
+               middlePosition="0.0" isPluginParameter="1" showValuePopup="Below"
+               pluginParameterName="Pan - Sampler 2" tooltip="Pan - Sampler 2"/>
+    <Component type="ScriptSlider" id="Samplerknb17" x="179.0" y="49.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel1" min="-24.0" max="24.0" middlePosition="0.0"
+               processorId="Transposer1" parameterId="TransposeAmount" isPluginParameter="1"
+               showValuePopup="Below" pluginParameterName="Transpose (semi) - Sampler 2"
+               tooltip="Transpose (semi) - Sampler 2" stepSize="1.0"/>
+    <Component type="ScriptSlider" id="Samplerknb18" x="234.0" y="49.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel1" processorId="MidiController1"
+               parameterId="Intensity" min="-0.07999999821186066" max="0.07999999821186066"
+               middlePosition="0.0" isPluginParameter="1" pluginParameterName="Detune (cents) - Sampler 2"
+               tooltip="Detune (cents) - Sampler 2"/>
+    <Component type="ScriptLabel" id="Gainlab6" x="30.0" y="77.0" width="50.0"
+               height="15.0" text="GAIN" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel1"/>
+    <Component type="ScriptLabel" id="Panlab6" x="85.0" y="77.0" width="50.0"
+               height="15.0" text="PAN" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel1"/>
+    <Component type="ScriptLabel" id="Translab6" x="170.0" y="77.0" width="50.0"
+               height="15.0" text="TRANS" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel1"/>
+    <Component type="ScriptLabel" id="Detunelab6" x="224.0" y="77.0" width="50.0"
+               height="15.0" text="DETUNE" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel1"/>
+  </Component>
+  <Component type="ScriptPanel" id="SamplerPanel2" x="599.0" y="87.0" width="300.0"
+             height="310.0" bgColour="0" itemColour="0" itemColour2="0" textColour="0">
+    <Component type="ScriptLabel" id="Releaselab3" x="241.0" y="289.0" width="50.0"
+               height="15.0" text="RELEASE" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel2"/>
+    <Component type="ScriptLabel" id="Sustainlab3" x="185.0" y="289.0" width="50.0"
+               height="15.0" text="SUSTAIN" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel2"/>
+    <Component type="ScriptLabel" id="Decaylab3" x="129.0" y="289.0" width="50.0"
+               height="15.0" text="DECAY" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel2"/>
+    <Component type="ScriptLabel" id="Holdlab3" x="73.0" y="289.0" width="50.0"
+               height="15.0" text="HOLD" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel2"/>
+    <Component type="ScriptLabel" id="Attacklab3" x="18.0" y="289.0" width="50.0"
+               height="15.0" text="ATTACK" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel2"/>
+    <Component type="ScriptFloatingTile" id="SamplerAnalyser2" x="21.0" y="97.0"
+               ContentType="AudioAnalyser" bgColour="0" itemColour="4294947525"
+               itemColour2="0" textColour="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Analyser2&quot;,&#10;  &quot;Index&quot;: 1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               width="260.0" height="57.0" parentComponent="SamplerPanel2" visible="0"/>
+    <Component type="ScriptFloatingTile" id="AHDSRView2" x="21.0" y="194.0"
+               ContentType="AHDSRGraph" bgColour="2434341" itemColour="16757445"
+               itemColour2="4294947525" textColour="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;AHDSREnvelope2&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               width="259.0" height="55.0" parentComponent="SamplerPanel2"/>
+    <Component type="ScriptButton" id="OneShotButton3" x="71.0" y="162.0" filmstripImage="{PROJECT_FOLDER}OneShotbutt.png"
+               scaleFactor="0.02999999932944775" width="67.0" height="30.0"
+               parentComponent="SamplerPanel2" processorId="Sampler2" parameterId="OneShot"
+               isPluginParameter="1" pluginParameterName="One Shot Enable - Sampler 3"
+               tooltip="One Shot Enable - Sampler 3"/>
+    <Component type="ScriptButton" id="ReverseButton3" x="164.0" y="162.0" filmstripImage="{PROJECT_FOLDER}Reversebutt.png"
+               scaleFactor="0.02999999932944775" width="67.0" height="30.0"
+               parentComponent="SamplerPanel2" processorId="Sampler2" parameterId="Reversed"
+               isPluginParameter="1" pluginParameterName="Reverse Enable - Sampler 3"
+               tooltip="Reverse Enable - Sampler 3"/>
+    <Component type="ScriptSlider" id="Samplerknb28" x="28.0" y="261.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel2" processorId="AHDSREnvelope2"
+               parameterId="Attack" mode="Time" max="20000.0" stepSize="1.0"
+               suffix=" ms" middlePosition="5000.0" defaultValue="20.0" isPluginParameter="1"
+               showValuePopup="Below" pluginParameterName="Attack - Sampler 3"
+               tooltip="Attack - Sampler 3"/>
+    <Component type="ScriptSlider" id="Samplerknb29" x="83.0" y="261.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel2" processorId="AHDSREnvelope2"
+               parameterId="Hold" mode="Time" max="20000.0" stepSize="1.0" suffix=" ms"
+               middlePosition="5000.0" isPluginParameter="1" showValuePopup="Below"
+               pluginParameterName="Hold - Sampler 3" tooltip="Hold - Sampler 3"/>
+    <Component type="ScriptSlider" id="Samplerknb30" x="139.0" y="261.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel2" processorId="AHDSREnvelope2"
+               parameterId="Decay" mode="Time" max="20000.0" stepSize="1.0"
+               suffix=" ms" middlePosition="5000.0" isPluginParameter="1" showValuePopup="Below"
+               pluginParameterName="Decay - Sampler 3" tooltip="Decay - Sampler 3"/>
+    <Component type="ScriptSlider" id="Samplerknb31" x="194.0" y="261.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel2" processorId="AHDSREnvelope2"
+               parameterId="Sustain" mode="Decibel" min="-100.0" max="0.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-50.0" isPluginParameter="1" showValuePopup="Below"
+               pluginParameterName="Sustain - Sampler 3" tooltip="Sustain - Sampler 3"/>
+    <Component type="ScriptSlider" id="Samplerknb32" x="250.0" y="261.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel2" processorId="AHDSREnvelope2"
+               parameterId="Release" mode="Time" max="20000.0" stepSize="1.0"
+               suffix=" ms" middlePosition="5000.0" defaultValue="50.0" isPluginParameter="1"
+               showValuePopup="Below" pluginParameterName="Release - Sampler 3"
+               tooltip="Release - Sampler 3"/>
+    <Component type="ScriptPanel" id="EQPanel2" x="1.0" y="-1.0" width="300.0"
+               height="315.0" bgColour="0" itemColour="0" itemColour2="0" textColour="0"
+               parentComponent="SamplerPanel2" visible="0">
+      <Component type="ScriptImage" id="EQBackground2" x="0.0" y="2.0" parentComponent="EQPanel2"
+                 width="300.0" height="307.0" fileName="{PROJECT_FOLDER}EQBG.png"
+                 scale="0.5"/>
+      <Component type="ScriptFloatingTile" id="SamplerEQ2" x="18.0" y="97.0" parentComponent="EQPanel2"
+                 bgColour="0" itemColour2="4294947525" itemColour="0" ContentType="DraggableFilterPanel"
+                 Data="{&#10;  &quot;ProcessorId&quot;: &quot;SamplerEQ2&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+                 textColour="1004198618" width="265.0" height="155.0" itemColour3="1660944383"/>
+    </Component>
+    <Component type="ScriptButton" id="EQSwitch2" x="270.0" y="14.0" bgColour="0"
+               itemColour="0" itemColour2="0" textColour="0" filmstripImage="{PROJECT_FOLDER}EQbutton1.png"
+               height="22.0" width="22.0" scaleFactor="0.699999988079071" parentComponent="SamplerPanel2"
+               isPluginParameter="1" saveInPreset="0" pluginParameterName="EQ Switch - Sampler 3"
+               tooltip="EQ Switch - Sampler 3"/>
+    <Component type="ScriptComboBox" id="SamplerSelection2" x="41.0" y="13.0"
+               max="79" width="221.0" height="25.0" bgColour="0" itemColour="0"
+               itemColour2="0" textColour="4294947525" parentComponent="SamplerPanel2"
+               items="BAS Beach Boiz&#10;BAS Buster Boi&#10;BAS Darksiders&#10;BAS Electric Pluck&#10;BAS Quick Hitter&#10;BAS Synth Whistler&#10;BAS Synthtex&#10;BAS The Slaps&#10;BAS Used Cars&#10;BASS Barney Rubble&#10;BEL Brassy Mallet&#10;BEL Chirpy&#10;BEL Churchy&#10;BEL Classic E Bell&#10;BEL Ding Dong&#10;BEL Glass House&#10;BEL Go To Church&#10;BEL Rosey Ringer&#10;BEL Summer Love&#10;BEL Tin Smack&#10;BEL Totally Tubular&#10;BEL Trippi Sticks&#10;GTR Big Dreams&#10;GTR Clean Pluck&#10;GTR Cyber Pluck&#10;GTR Ethnic Pluck&#10;GTR Fuzzy Wuzzy&#10;GTR Plate Bender&#10;GTR Steel String&#10;GTR Trippy Electric&#10;HRN Little Brasscals&#10;HRN Lofi Horn&#10;HRN Rusty Bone&#10;HRN Weird Looper&#10;KEY Classic E Piano&#10;KEY Classic Waves&#10;KEY Clavisso&#10;KEY DX7 E Piano&#10;KEY Dirty Organ&#10;KEY Failing Organ&#10;KEY Hades Organ&#10;KEY Illness Piano&#10;KEY Organ Donor&#10;KEY Pretty Kitty&#10;KEY Real Fakey&#10;KEY Ringer Organ&#10;KEY Toybox&#10;KEY Zingers&#10;MAL Sunshine&#10;PAD Angelica&#10;PAD Bloody Moons&#10;PAD Buzzing Angels&#10;PAD Ill Minded&#10;PAD Organ Effect&#10;PAD Pluck Texture&#10;PAD Rising Star&#10;PAD Rose Gold&#10;PAD Soso Cold&#10;PAD The Fallen&#10;PAD Tripster&#10;STR MediString&#10;STR MediString2&#10;STR Sloppy&#10;STR Strings Of Fire&#10;SYN Castles And Dragons&#10;SYN Gameboi&#10;SYN Leader&#10;SYN Robo Talk&#10;SYN Simple Syns&#10;SYN Synergy&#10;SYN Tektron&#10;SYN Ting Ting Synth&#10;SYN Wibble Voices&#10;SYN Zapper&#10;VOC Choir Vocals&#10;VOC Dark Night&#10;VOC Head Voices&#10;WND Dixie Flute&#10;WND Fun Flute"
+               isPluginParameter="1" pluginParameterName="Sample Selection - Sampler 3"
+               tooltip="Sample Selection - Sampler 3"/>
+    <Component type="ScriptSlider" id="Samplerknb24" x="42.0" y="49.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel2" min="-100.0" max="36.0" mode="Decibel"
+               middlePosition="-18.0" defaultValue="-18.0" processorId="SamplerGain2"
+               parameterId="Gain" isPluginParameter="1" showValuePopup="Below"
+               pluginParameterName="Gain - Sampler 3" tooltip="Gain - Sampler 3"/>
+    <Component type="ScriptSlider" id="Samplerknb25" x="97.0" y="49.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel2" processorId="SamplerGain1" parameterId="Balance"
+               mode="Pan" min="-100.0" max="100.0" stepSize="1.0" suffix="L"
+               middlePosition="0.0" isPluginParameter="1" showValuePopup="Below"
+               pluginParameterName="Pan - Sampler 3" tooltip="Pan - Sampler 3"/>
+    <Component type="ScriptSlider" id="Samplerknb26" x="180.0" y="49.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel2" min="-24.0" max="24.0" middlePosition="0.0"
+               processorId="Transposer2" parameterId="TransposeAmount" isPluginParameter="1"
+               showValuePopup="Below" pluginParameterName="Transpose (semi) - Sampler 3"
+               tooltip="Transpose (semi) - Sampler 3" stepSize="1.0"/>
+    <Component type="ScriptSlider" id="Samplerknb27" x="235.0" y="49.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel2" processorId="MidiController2"
+               parameterId="Intensity" min="-0.07999999821186066" max="0.07999999821186066"
+               middlePosition="0.0" isPluginParameter="1" pluginParameterName="Detune (cents) - Sampler 3"
+               tooltip="Detune (cents) - Sampler 3"/>
+    <Component type="ScriptLabel" id="Gainlab5" x="31.0" y="78.0" width="50.0"
+               height="15.0" text="GAIN" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel2"/>
+    <Component type="ScriptLabel" id="Panlab5" x="86.0" y="78.0" width="50.0"
+               height="15.0" text="PAN" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel2"/>
+    <Component type="ScriptLabel" id="Translab5" x="171.0" y="78.0" width="50.0"
+               height="15.0" text="TRANS" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel2"/>
+    <Component type="ScriptLabel" id="Detunelab5" x="225.0" y="78.0" width="50.0"
+               height="15.0" text="DETUNE" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel2"/>
+  </Component>
+  <Component type="ScriptPanel" id="SamplerPanel3" x="898.0" y="88.0" width="300.0"
+             height="310.0" bgColour="0" itemColour="0" itemColour2="0" textColour="0">
+    <Component type="ScriptLabel" id="Releaselab4" x="241.0" y="288.0" width="50.0"
+               height="15.0" text="RELEASE" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel3"/>
+    <Component type="ScriptLabel" id="Sustainlab4" x="185.0" y="288.0" width="50.0"
+               height="15.0" text="SUSTAIN" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel3"/>
+    <Component type="ScriptLabel" id="Decaylab4" x="129.0" y="288.0" width="50.0"
+               height="15.0" text="DECAY" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel3"/>
+    <Component type="ScriptLabel" id="Holdlab4" x="73.0" y="288.0" width="50.0"
+               height="15.0" text="HOLD" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel3"/>
+    <Component type="ScriptLabel" id="Attacklab4" x="18.0" y="288.0" width="50.0"
+               height="15.0" text="ATTACK" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel3"/>
+    <Component type="ScriptFloatingTile" id="SamplerAnalyser3" x="22.0" y="96.0"
+               ContentType="AudioAnalyser" bgColour="0" itemColour="4294947525"
+               itemColour2="0" textColour="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;Analyser3&quot;,&#10;  &quot;Index&quot;: 1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               width="260.0" height="57.0" parentComponent="SamplerPanel3" visible="0"/>
+    <Component type="ScriptFloatingTile" id="AHDSRView3" x="22.0" y="193.0"
+               ContentType="AHDSRGraph" bgColour="2434341" itemColour="16757445"
+               itemColour2="4294947525" textColour="0" Data="{&#10;  &quot;ProcessorId&quot;: &quot;AHDSREnvelope3&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+               width="259.0" height="55.0" parentComponent="SamplerPanel3"/>
+    <Component type="ScriptButton" id="OneShotButton4" x="72.0" y="161.0" filmstripImage="{PROJECT_FOLDER}OneShotbutt.png"
+               scaleFactor="0.02999999932944775" width="67.0" height="30.0"
+               parentComponent="SamplerPanel3" processorId="Sampler3" parameterId="OneShot"
+               isPluginParameter="1" pluginParameterName="One Shot Enable - Sampler 4"
+               tooltip="One Shot Enable - Sampler 4"/>
+    <Component type="ScriptButton" id="ReverseButton4" x="165.0" y="161.0" filmstripImage="{PROJECT_FOLDER}Reversebutt.png"
+               scaleFactor="0.02999999932944775" width="67.0" height="30.0"
+               parentComponent="SamplerPanel3" processorId="Sampler3" parameterId="Reversed"
+               isPluginParameter="1" pluginParameterName="Reverse Enable - Sampler 4"
+               tooltip="Reverse Enable - Sampler 4"/>
+    <Component type="ScriptSlider" id="Samplerknb37" x="28.0" y="261.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel3" processorId="AHDSREnvelope3"
+               parameterId="Attack" mode="Time" max="20000.0" stepSize="1.0"
+               suffix=" ms" middlePosition="5000.0" defaultValue="20.0" isPluginParameter="1"
+               showValuePopup="Below" pluginParameterName="Attack - Sampler 4"
+               tooltip="Attack - Sampler 4"/>
+    <Component type="ScriptSlider" id="Samplerknb38" x="83.0" y="261.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel3" processorId="AHDSREnvelope3"
+               parameterId="Hold" mode="Time" max="20000.0" stepSize="1.0" suffix=" ms"
+               middlePosition="5000.0" isPluginParameter="1" showValuePopup="Below"
+               pluginParameterName="Hold - Sampler 4" tooltip="Hold - Sampler 4"/>
+    <Component type="ScriptSlider" id="Samplerknb39" x="139.0" y="261.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel3" processorId="AHDSREnvelope3"
+               parameterId="Decay" mode="Time" max="20000.0" stepSize="1.0"
+               suffix=" ms" middlePosition="5000.0" isPluginParameter="1" showValuePopup="Below"
+               pluginParameterName="Decay - Sampler 4" tooltip="Decay - Sampler 4"/>
+    <Component type="ScriptSlider" id="Samplerknb40" x="195.0" y="261.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel3" processorId="AHDSREnvelope3"
+               parameterId="Sustain" mode="Decibel" min="-100.0" max="0.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-50.0" isPluginParameter="1" showValuePopup="Below"
+               pluginParameterName="Sustain - Sampler 4" tooltip="Sustain - Sampler 4"/>
+    <Component type="ScriptSlider" id="Samplerknb41" x="251.0" y="261.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel3" processorId="AHDSREnvelope3"
+               parameterId="Release" mode="Time" max="20000.0" stepSize="1.0"
+               suffix=" ms" middlePosition="5000.0" defaultValue="50.0" isPluginParameter="1"
+               showValuePopup="Below" pluginParameterName="Release - Sampler 4"
+               tooltip="Release - Sampler 4"/>
+    <Component type="ScriptPanel" id="EQPanel3" x="2.0" y="-2.0" width="300.0"
+               height="315.0" bgColour="0" itemColour="0" itemColour2="0" textColour="0"
+               parentComponent="SamplerPanel3" visible="0">
+      <Component type="ScriptImage" id="EQBackground4" x="0.0" y="2.0" parentComponent="EQPanel3"
+                 width="300.0" height="307.0" fileName="{PROJECT_FOLDER}EQBG.png"
+                 scale="0.5"/>
+      <Component type="ScriptFloatingTile" id="SamplerEQ4" x="18.0" y="97.0" parentComponent="EQPanel3"
+                 bgColour="0" itemColour2="4294947525" itemColour="0" ContentType="DraggableFilterPanel"
+                 Data="{&#10;  &quot;ProcessorId&quot;: &quot;SamplerEQ3&quot;,&#10;  &quot;Index&quot;: -1,&#10;  &quot;FollowWorkspace&quot;: false&#10;}"
+                 textColour="1004198618" width="265.0" height="155.0" itemColour3="1660944383"/>
+    </Component>
+    <Component type="ScriptButton" id="EQSwitch3" x="271.0" y="13.0" bgColour="0"
+               itemColour="0" itemColour2="0" textColour="0" filmstripImage="{PROJECT_FOLDER}EQbutton1.png"
+               height="22.0" width="22.0" scaleFactor="0.699999988079071" parentComponent="SamplerPanel3"
+               isPluginParameter="1" saveInPreset="0" pluginParameterName="EQ Switch - Sampler 4"
+               tooltip="EQ Switch - Sampler 4"/>
+    <Component type="ScriptComboBox" id="SamplerSelection3" x="42.0" y="12.0"
+               max="79" width="221.0" height="25.0" bgColour="0" itemColour="0"
+               itemColour2="0" textColour="4294947525" parentComponent="SamplerPanel3"
+               items="BAS Beach Boiz&#10;BAS Buster Boi&#10;BAS Darksiders&#10;BAS Electric Pluck&#10;BAS Quick Hitter&#10;BAS Synth Whistler&#10;BAS Synthtex&#10;BAS The Slaps&#10;BAS Used Cars&#10;BASS Barney Rubble&#10;BEL Brassy Mallet&#10;BEL Chirpy&#10;BEL Churchy&#10;BEL Classic E Bell&#10;BEL Ding Dong&#10;BEL Glass House&#10;BEL Go To Church&#10;BEL Rosey Ringer&#10;BEL Summer Love&#10;BEL Tin Smack&#10;BEL Totally Tubular&#10;BEL Trippi Sticks&#10;GTR Big Dreams&#10;GTR Clean Pluck&#10;GTR Cyber Pluck&#10;GTR Ethnic Pluck&#10;GTR Fuzzy Wuzzy&#10;GTR Plate Bender&#10;GTR Steel String&#10;GTR Trippy Electric&#10;HRN Little Brasscals&#10;HRN Lofi Horn&#10;HRN Rusty Bone&#10;HRN Weird Looper&#10;KEY Classic E Piano&#10;KEY Classic Waves&#10;KEY Clavisso&#10;KEY DX7 E Piano&#10;KEY Dirty Organ&#10;KEY Failing Organ&#10;KEY Hades Organ&#10;KEY Illness Piano&#10;KEY Organ Donor&#10;KEY Pretty Kitty&#10;KEY Real Fakey&#10;KEY Ringer Organ&#10;KEY Toybox&#10;KEY Zingers&#10;MAL Sunshine&#10;PAD Angelica&#10;PAD Bloody Moons&#10;PAD Buzzing Angels&#10;PAD Ill Minded&#10;PAD Organ Effect&#10;PAD Pluck Texture&#10;PAD Rising Star&#10;PAD Rose Gold&#10;PAD Soso Cold&#10;PAD The Fallen&#10;PAD Tripster&#10;STR MediString&#10;STR MediString2&#10;STR Sloppy&#10;STR Strings Of Fire&#10;SYN Castles And Dragons&#10;SYN Gameboi&#10;SYN Leader&#10;SYN Robo Talk&#10;SYN Simple Syns&#10;SYN Synergy&#10;SYN Tektron&#10;SYN Ting Ting Synth&#10;SYN Wibble Voices&#10;SYN Zapper&#10;VOC Choir Vocals&#10;VOC Dark Night&#10;VOC Head Voices&#10;WND Dixie Flute&#10;WND Fun Flute"
+               isPluginParameter="1" pluginParameterName="Sample Selection - Sampler 4"
+               tooltip="Sample Selection - Sampler 4"/>
+    <Component type="ScriptSlider" id="Samplerknb33" x="42.0" y="49.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel3" min="-100.0" max="36.0" mode="Decibel"
+               middlePosition="-18.0" defaultValue="-18.0" processorId="SamplerGain3"
+               parameterId="Gain" isPluginParameter="1" showValuePopup="Below"
+               pluginParameterName="Gain - Sampler 4" tooltip="Gain - Sampler 4"/>
+    <Component type="ScriptSlider" id="Samplerknb34" x="97.0" y="49.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel3" processorId="SamplerGain1" parameterId="Balance"
+               mode="Pan" min="-100.0" max="100.0" stepSize="1.0" suffix="L"
+               middlePosition="0.0" isPluginParameter="1" showValuePopup="Below"
+               pluginParameterName="Pan - Sampler 4" tooltip="Pan - Sampler 4"/>
+    <Component type="ScriptSlider" id="Samplerknb35" x="180.0" y="49.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel3" min="-24.0" max="24.0" middlePosition="0.0"
+               processorId="Transposer3" parameterId="TransposeAmount" isPluginParameter="1"
+               showValuePopup="Below" pluginParameterName="Transpose (semi) - Sampler 4"
+               tooltip="Transpose (semi) - Sampler 4" stepSize="1.0"/>
+    <Component type="ScriptSlider" id="Samplerknb36" x="235.0" y="49.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+               numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+               parentComponent="SamplerPanel3" processorId="MidiController3"
+               parameterId="Intensity" min="-0.07999999821186066" max="0.07999999821186066"
+               middlePosition="0.0" isPluginParameter="1" pluginParameterName="Detune (cents) - Sampler 4"
+               tooltip="Detune (cents) - Sampler 4"/>
+    <Component type="ScriptLabel" id="Translab4" x="171.0" y="77.0" width="50.0"
+               height="15.0" text="TRANS" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel3"/>
+    <Component type="ScriptLabel" id="Detunelab4" x="225.0" y="77.0" width="50.0"
+               height="15.0" text="DETUNE" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel3"/>
+    <Component type="ScriptLabel" id="Panlab4" x="86.0" y="77.0" width="50.0"
+               height="15.0" text="PAN" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel3"/>
+    <Component type="ScriptLabel" id="Gainlab4" x="31.0" y="77.0" width="50.0"
+               height="15.0" text="GAIN" fontSize="11.0" itemColour2="1118481"
+               editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+               parentComponent="SamplerPanel3"/>
+  </Component>
+  <Component type="ScriptSlider" id="PanGlobslider" x="339.0" y="8.0" filmstripImage="{PROJECT_FOLDER}slider_horizontal_bipolar.png"
+             scaleFactor="0.3499999940395355" numStrips="129.0" width="160.0"
+             height="27.0" mode="Pan" min="-100.0" max="100.0" stepSize="1.0"
+             suffix="L" middlePosition="0.0" processorId="GlobGainPan" parameterId="Balance"
+             isPluginParameter="1" pluginParameterName="Pan - Global" tooltip="Pan - Global"/>
+  <Component type="ScriptSlider" id="GainGlobslider" x="702.0" y="8.0" filmstripImage="{PROJECT_FOLDER}slider_horizontal.png"
+             scaleFactor="0.3499999940395355" numStrips="129.0" width="160.0"
+             height="27.0" processorId="GlobGainPan" parameterId="Gain" mode="Decibel"
+             min="-100.0" max="36.0" stepSize="0.1000000014901161" suffix=" dB"
+             middlePosition="-32.0" isPluginParameter="1" pluginParameterName="Gain - Global"
+             tooltip="Gain - Global"/>
+  <Component type="ScriptSlider" id="Attack1" x="443.0" y="51.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+             numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+             mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="5000.0"
+             defaultValue="20.0" isPluginParameter="1" isMetaParameter="1"
+             showValuePopup="Below" pluginParameterName="Attack - Global"
+             tooltip="Attack - Global"/>
+  <Component type="ScriptLabel" id="Attacklab5" x="420.0" y="58.0" width="26.0"
+             height="15.0" text="A" fontSize="11.0" itemColour2="1118481"
+             editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"/>
+  <Component type="ScriptSlider" id="Hold1" x="515.0" y="51.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+             numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+             mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+             isPluginParameter="1" isMetaParameter="1" showValuePopup="Below"
+             pluginParameterName="Hold - Global" tooltip="Hold - Global"/>
+  <Component type="ScriptLabel" id="Holdlab5" x="491.0" y="58.0" width="26.0"
+             height="15.0" text="H" fontSize="11.0" itemColour2="1118481"
+             editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"/>
+  <Component type="ScriptSlider" id="Decay1" x="587.0" y="51.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+             numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+             mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+             isPluginParameter="1" isMetaParameter="1" showValuePopup="Below"
+             pluginParameterName="Decay - Global" tooltip="Decay - Global"/>
+  <Component type="ScriptLabel" id="Decaylab5" x="564.0" y="58.0" width="26.0"
+             height="15.0" text="D" fontSize="11.0" itemColour2="1118481"
+             editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"/>
+  <Component type="ScriptSlider" id="Release1" x="731.0" y="51.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+             numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+             mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+             defaultValue="20000.0" isPluginParameter="1" isMetaParameter="1"
+             showValuePopup="Below" pluginParameterName="Release - Global"
+             tooltip="Release - Global"/>
+  <Component type="ScriptLabel" id="Sustainlab5" x="636.0" y="58.0" width="26.0"
+             height="15.0" text="S" fontSize="11.0" itemColour2="1118481"
+             editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"/>
+  <Component type="ScriptSlider" id="Sustain1" x="659.0" y="51.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+             numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+             mode="Decibel" min="-100.0" max="0.0" stepSize="0.1000000014901161"
+             suffix=" dB" middlePosition="-18.0" isPluginParameter="1" isMetaParameter="1"
+             showValuePopup="Below" pluginParameterName="Sustain - Global"
+             tooltip="Sustain - Global"/>
+  <Component type="ScriptLabel" id="Releaselab5" x="708.0" y="58.0" width="26.0"
+             height="15.0" text="R" fontSize="11.0" itemColour2="1118481"
+             editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"/>
+  <Component type="ScriptButton" id="FXButton" x="483.0" y="619.0" filmstripImage="{PROJECT_FOLDER}FXbutt.png"
+             scaleFactor="0.03999999910593033" width="90.0" height="40.0"
+             saveInPreset="0" tooltip="FX Popup Panel"/>
+  <Component type="ScriptButton" id="PresetsButton" x="556.0" y="619.0" width="90.0"
+             height="40.0" scaleFactor="0.03999999910593033" filmstripImage="{PROJECT_FOLDER}Presetsbutt.png"
+             saveInPreset="0" tooltip="Presets Popup Panel"/>
+  <Component type="ScriptButton" id="SettingsButton" x="629.0" y="619.0" width="90.0"
+             height="40.0" scaleFactor="0.03999999910593033" filmstripImage="{PROJECT_FOLDER}Settingsbutt.png"
+             saveInPreset="0" tooltip="Settings Popup Panel"/>
+  <Component type="ScriptPanel" id="PopupHolder" x="0.0" y="394.0" width="1200.0"
+             height="220.0" bgColour="0" itemColour="0" itemColour2="0" textColour="0">
+    <Component type="ScriptPanel" id="FXPanel" x="0.0" y="1.0" width="1200.0"
+               height="220.0" bgColour="0" itemColour="0" itemColour2="0" textColour="0"
+               parentComponent="PopupHolder" visible="0">
+      <Component type="ScriptImage" id="Image1" x="0.0" y="-1.0" parentComponent="FXPanel"
+                 fileName="{PROJECT_FOLDER}PopupBackground3.png" width="1200.0"
+                 height="218.0" scale="0.5"/>
+      <Component type="ScriptSlider" id="FXMainscale" x="486.0" y="-4.0" filmstripImage="{PROJECT_FOLDER}MainKnbScale106.png"
+                 numStrips="106.0" width="230.0" height="220.0" scaleFactor="0.3499999940395355"
+                 parentComponent="FXPanel" mode="NormalizedPercentage" suffix="%"
+                 middlePosition="0.5" tooltip="Main FX Knob" mouseSensitivity="0.5"
+                 processorId="" isPluginParameter="1" isMetaParameter="1"/>
+      <Component type="ScriptSlider" id="FXMainknb" x="520.0" y="30.0" filmstripImage="{PROJECT_FOLDER}MainKnb51.png"
+                 numStrips="51.0" width="167.0" height="167.0" scaleFactor="0.3149999976158142"
+                 parentComponent="FXPanel" mode="NormalizedPercentage" suffix="%"
+                 middlePosition="0.5" tooltip="Main FX Knob" mouseSensitivity="0.5"
+                 saveInPreset="0" processorId="" linkedTo="FXMainscale"/>
+      <Component type="ScriptLabel" id="MainKnblab" x="553.0" y="196.0" width="100.0"
+                 height="15.0" text="TINGZ HAPPEN" itemColour2="1118481" editable="0"
+                 fontName="Default" fontStyle="Bold" textColour="4293454056" parentComponent="FXPanel"/>
+      <Component type="ScriptSlider" id="FXExtraknb1" x="21.0" y="44.0" filmstripImage="{PROJECT_FOLDER}knob_big_silver.png"
+                 numStrips="129.0" scaleFactor="0.3499999940395355" width="68.0"
+                 height="80.0" parentComponent="FXPanel" processorId="Delay" parameterId="DelayTimeLeft"
+                 mode="TempoSync" max="18.0" stepSize="1.0" middlePosition="9.0"
+                 isPluginParameter="1" showValuePopup="Below" pluginParameterName="Delay - Time Left"
+                 tooltip="Delay - Time Left"/>
+      <Component type="ScriptSlider" id="FXExtraknb2" x="106.0" y="44.0" filmstripImage="{PROJECT_FOLDER}knob_big_silver.png"
+                 numStrips="129.0" scaleFactor="0.3499999940395355" width="68.0"
+                 height="80.0" parentComponent="FXPanel" processorId="Delay" parameterId="DelayTimeRight"
+                 mode="TempoSync" max="18.0" stepSize="1.0" middlePosition="9.0"
+                 isPluginParameter="1" showValuePopup="Below" pluginParameterName="Delay - Time Right"
+                 tooltip="Delay - Time Right"/>
+      <Component type="ScriptSlider" id="FXExtraknb3" x="191.0" y="44.0" filmstripImage="{PROJECT_FOLDER}knob_big_silver.png"
+                 numStrips="129.0" scaleFactor="0.3499999940395355" width="68.0"
+                 height="80.0" parentComponent="FXPanel" processorId="Delay" parameterId="FeedbackLeft"
+                 mode="NormalizedPercentage" suffix="%" middlePosition="0.5" isPluginParameter="1"
+                 showValuePopup="Below" pluginParameterName="Delay - Space Left"
+                 tooltip="Delay - Space Left"/>
+      <Component type="ScriptSlider" id="FXExtraknb4" x="276.0" y="44.0" filmstripImage="{PROJECT_FOLDER}knob_big_silver.png"
+                 numStrips="129.0" scaleFactor="0.3499999940395355" width="68.0"
+                 height="80.0" parentComponent="FXPanel" processorId="Delay" parameterId="FeedbackRight"
+                 mode="NormalizedPercentage" suffix="%" middlePosition="0.5" isPluginParameter="1"
+                 showValuePopup="Below" pluginParameterName="Delay - Space Right"
+                 tooltip="Delay - Space Right"/>
+      <Component type="ScriptSlider" id="FXExtraknb5" x="362.0" y="44.0" filmstripImage="{PROJECT_FOLDER}knob_big_silver.png"
+                 numStrips="129.0" scaleFactor="0.3499999940395355" width="68.0"
+                 height="80.0" parentComponent="FXPanel" processorId="Delay" parameterId="Mix"
+                 mode="NormalizedPercentage" suffix="%" middlePosition="0.5" isPluginParameter="1"
+                 showValuePopup="Below" pluginParameterName="Delay - Mix" tooltip="Delay - Mix"/>
+      <Component type="ScriptSlider" id="FXExtraknb6" x="772.0" y="44.0" filmstripImage="{PROJECT_FOLDER}knob_big_silver.png"
+                 numStrips="129.0" scaleFactor="0.3499999940395355" width="68.0"
+                 height="80.0" parentComponent="FXPanel" mode="NormalizedPercentage"
+                 suffix="%" middlePosition="0.5" processorId="Reverb" parameterId="RoomSize"
+                 isPluginParameter="1" showValuePopup="Below" pluginParameterName="Reverb - Room"
+                 tooltip="Reverb - Room"/>
+      <Component type="ScriptSlider" id="FXExtraknb7" x="885.0" y="44.0" filmstripImage="{PROJECT_FOLDER}knob_big_silver.png"
+                 numStrips="129.0" scaleFactor="0.3499999940395355" width="68.0"
+                 height="80.0" parentComponent="FXPanel" mode="NormalizedPercentage"
+                 suffix="%" middlePosition="0.5" processorId="Reverb" parameterId="Damping"
+                 isPluginParameter="1" showValuePopup="Below" pluginParameterName="Reverb - Damping"
+                 tooltip="Reverb - Damping"/>
+      <Component type="ScriptSlider" id="FXExtraknb8" x="998.0" y="44.0" filmstripImage="{PROJECT_FOLDER}knob_big_silver.png"
+                 numStrips="129.0" scaleFactor="0.3499999940395355" width="68.0"
+                 height="80.0" parentComponent="FXPanel" mode="NormalizedPercentage"
+                 suffix="%" middlePosition="0.5" processorId="Reverb" parameterId="Width"
+                 isPluginParameter="1" showValuePopup="Below" pluginParameterName="Reverb - Width"
+                 tooltip="Reverb - Width"/>
+      <Component type="ScriptSlider" id="FXExtraknb9" x="1111.0" y="44.0" filmstripImage="{PROJECT_FOLDER}knob_big_silver.png"
+                 numStrips="129.0" scaleFactor="0.3499999940395355" width="68.0"
+                 height="80.0" parentComponent="FXPanel" mode="NormalizedPercentage"
+                 suffix="%" middlePosition="0.5" processorId="Reverb" parameterId="WetLevel"
+                 isPluginParameter="1" showValuePopup="Below" pluginParameterName="Reverb - Mix"
+                 tooltip="Reverb - Mix"/>
+      <Component type="ScriptSlider" id="FXExtraknb10" x="279.0" y="149.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+                 numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+                 parentComponent="FXPanel" processorId="LFOWet" parameterId="Frequency"
+                 mode="TempoSync" max="18.0" stepSize="1.0" middlePosition="9.0"
+                 isPluginParameter="1" showValuePopup="Below" pluginParameterName="LFO Wet - Time"
+                 tooltip="LFO Wet - Time"/>
+      <Component type="ScriptSlider" id="FXExtraknb11" x="364.0" y="149.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+                 numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+                 parentComponent="FXPanel" processorId="LFOWet" parameterId="Intensity"
+                 mode="NormalizedPercentage" suffix="%" middlePosition="0.5" isPluginParameter="1"
+                 showValuePopup="Below" pluginParameterName="LFO Wet - Mix" tooltip="LFO Wet - Mix"/>
+      <Component type="ScriptSlider" id="FXExtraknb12" x="59.0" y="149.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+                 numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+                 parentComponent="FXPanel" processorId="LFODry" parameterId="Frequency"
+                 mode="TempoSync" max="18.0" stepSize="1.0" middlePosition="9.0"
+                 isPluginParameter="1" showValuePopup="Below" pluginParameterName="LFO Dry - Time"
+                 tooltip="LFO Dry - Time"/>
+      <Component type="ScriptSlider" id="FXExtraknb13" x="144.0" y="149.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+                 numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+                 parentComponent="FXPanel" processorId="LFODry" parameterId="Intensity"
+                 mode="NormalizedPercentage" suffix="%" middlePosition="0.5" isPluginParameter="1"
+                 showValuePopup="Below" pluginParameterName="LFO Dry - Mix" tooltip="LFO Dry - Mix"/>
+      <Component type="ScriptSlider" id="FXExtraknb14" x="895.0" y="149.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+                 numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+                 parentComponent="FXPanel" mode="Frequency" min="20.0" max="20000.0"
+                 stepSize="1.0" suffix=" Hz" middlePosition="1500.0" defaultValue="20000.0"
+                 processorId="LPDry" parameterId="Freq" isPluginParameter="1"
+                 showValuePopup="Below" pluginParameterName="Filter Dry - Low Pass"
+                 tooltip="Filter Dry - Low Pass"/>
+      <Component type="ScriptSlider" id="FXExtraknb15" x="810.0" y="149.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+                 numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+                 parentComponent="FXPanel" mode="Frequency" min="20.0" max="20000.0"
+                 stepSize="1.0" suffix=" Hz" middlePosition="1500.0" defaultValue="20.0"
+                 processorId="HPDry" parameterId="Freq" isPluginParameter="1"
+                 showValuePopup="Below" pluginParameterName="Filter Dry - High Pass"
+                 tooltip="Filter Dry - High Pass"/>
+      <Component type="ScriptSlider" id="FXExtraknb16" x="1115.0" y="149.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+                 numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+                 parentComponent="FXPanel" mode="Frequency" min="20.0" max="20000.0"
+                 stepSize="1.0" suffix=" Hz" middlePosition="1500.0" defaultValue="20000.0"
+                 processorId="LPWet" parameterId="Freq" isPluginParameter="1"
+                 showValuePopup="Below" pluginParameterName="Filter Wet - Low Pass"
+                 tooltip="Filter Wet - Low Pass"/>
+      <Component type="ScriptSlider" id="FXExtraknb17" x="1030.0" y="149.0" filmstripImage="{PROJECT_FOLDER}knob_light_small_2x(1x128).png"
+                 numStrips="128.0" scaleFactor="0.5" width="27.0" height="27.0"
+                 parentComponent="FXPanel" mode="Frequency" min="20.0" max="20000.0"
+                 stepSize="1.0" suffix=" Hz" middlePosition="1500.0" defaultValue="20.0"
+                 processorId="HPWet" parameterId="Freq" isPluginParameter="1"
+                 showValuePopup="Below" pluginParameterName="Filter Wet - High Pass"
+                 tooltip="Filter Wet - High Pass"/>
+      <Component type="ScriptLabel" id="Wetlab1" x="1061.0" y="140.0" width="50.0"
+                 height="15.0" text="WET" itemColour2="1118481" editable="0" fontName="Default"
+                 fontStyle="Bold" textColour="4294947525" parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="DryLab1" x="842.0" y="140.0" width="50.0"
+                 height="15.0" text="DRY" itemColour2="1118481" editable="0" fontName="Default"
+                 fontStyle="Bold" textColour="4294947525" parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="DryLab2" x="91.0" y="140.0" width="50.0"
+                 height="15.0" text="DRY" itemColour2="1118481" editable="0" fontName="Default"
+                 fontStyle="Bold" textColour="4294947525" parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="Wetlab2" x="311.0" y="140.0" width="50.0"
+                 height="15.0" text="WET" itemColour2="1118481" editable="0" fontName="Default"
+                 fontStyle="Bold" textColour="4294947525" parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="DelayTimeLlab" x="30.0" y="111.0" width="50.0"
+                 height="15.0" text="LEFT" fontSize="11.0" itemColour2="1118481"
+                 editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+                 parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="DelayTimelab" x="73.0" y="49.0" width="50.0"
+                 height="15.0" text="TIME" itemColour2="1118481" editable="0"
+                 fontName="Default" fontStyle="Bold" textColour="4294947525" parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="DelayTimeRlab" x="115.0" y="111.0" width="50.0"
+                 height="15.0" text="RIGHT" fontSize="11.0" itemColour2="1118481"
+                 editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+                 parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="Spacelab" x="243.0" y="49.0" width="50.0"
+                 height="15.0" text="SPACE" itemColour2="1118481" editable="0"
+                 fontName="Default" fontStyle="Bold" textColour="4294947525" parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="DelayTimeLlab1" x="200.0" y="111.0" width="50.0"
+                 height="15.0" text="LEFT" fontSize="11.0" itemColour2="1118481"
+                 editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+                 parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="DelayTimeRlab1" x="285.0" y="111.0" width="50.0"
+                 height="15.0" text="RIGHT" fontSize="11.0" itemColour2="1118481"
+                 editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+                 parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="DelayMixlab" x="371.0" y="111.0" width="50.0"
+                 height="15.0" text="MIX" fontSize="11.0" itemColour2="1118481"
+                 editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+                 parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="LFOTime1" x="48.0" y="177.0" width="50.0"
+                 height="15.0" text="TIME" fontSize="11.0" itemColour2="1118481"
+                 editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+                 parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="LFOIntense1" x="133.0" y="177.0" width="50.0"
+                 height="15.0" text="MIX" fontSize="11.0" itemColour2="1118481"
+                 editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+                 parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="LFOIntense2" x="353.0" y="177.0" width="50.0"
+                 height="15.0" text="MIX" fontSize="11.0" itemColour2="1118481"
+                 editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+                 parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="LFOTime2" x="268.0" y="177.0" width="50.0"
+                 height="15.0" text="TIME" fontSize="11.0" itemColour2="1118481"
+                 editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+                 parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="LPFilterlab2" x="1104.0" y="177.0" width="50.0"
+                 height="15.0" text="LP" fontSize="11.0" itemColour2="1118481"
+                 editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+                 parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="HPFiltlab2" x="1019.0" y="177.0" width="50.0"
+                 height="15.0" text="HP" fontSize="11.0" itemColour2="1118481"
+                 editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+                 parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="LPFilterlab" x="884.0" y="177.0" width="50.0"
+                 height="15.0" text="LP" fontSize="11.0" itemColour2="1118481"
+                 editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+                 parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="HPFiltlab1" x="799.0" y="177.0" width="50.0"
+                 height="15.0" text="HP" fontSize="11.0" itemColour2="1118481"
+                 editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+                 parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="ReverbRoomlab" x="782.0" y="111.0" width="50.0"
+                 height="15.0" text="ROOM" fontSize="11.0" itemColour2="1118481"
+                 editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+                 parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="ReverbDamblab" x="894.0" y="111.0" width="50.0"
+                 height="15.0" text="DAMP" fontSize="11.0" itemColour2="1118481"
+                 editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+                 parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="ReverbWidthlab" x="1008.0" y="111.0" width="50.0"
+                 height="15.0" text="WIDTH" fontSize="11.0" itemColour2="1118481"
+                 editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+                 parentComponent="FXPanel"/>
+      <Component type="ScriptLabel" id="ReverbMIXlab" x="1120.0" y="111.0" width="50.0"
+                 height="15.0" text="MIX" fontSize="11.0" itemColour2="1118481"
+                 editable="0" fontName="Default" fontStyle="Bold" textColour="4293454056"
+                 parentComponent="FXPanel"/>
+    </Component>
+    <Component type="ScriptPanel" id="PresetsPanel" x="0.0" y="0.0" width="1200.0"
+               height="220.0" bgColour="0" itemColour="0" itemColour2="0" textColour="0"
+               parentComponent="PopupHolder">
+      <Component type="ScriptImage" id="PresetBackground" x="0.0" y="0.0" width="1200.0"
+                 height="220.0" parentComponent="PresetsPanel" fileName="{PROJECT_FOLDER}PopupBackground1.png"/>
+      <Component type="ScriptFloatingTile" id="PresetsTile" x="19.0" y="0.0" parentComponent="PresetsPanel"
+                 width="1160.0" height="230.0" bgColour="0" ContentType="PresetBrowser"
+                 itemColour="4294947525" itemColour2="0" Data="{&#10;  &quot;ShowSaveButton&quot;: true,&#10;  &quot;ShowExpansionsAsColumn&quot;: false,&#10;  &quot;ShowFolderButton&quot;: true,&#10;  &quot;ShowNotes&quot;: false,&#10;  &quot;ShowEditButtons&quot;: true,&#10;  &quot;EditButtonOffset&quot;: 10,&#10;  &quot;ShowAddButton&quot;: true,&#10;  &quot;ShowRenameButton&quot;: true,&#10;  &quot;ShowDeleteButton&quot;: true,&#10;  &quot;ShowFavoriteIcon&quot;: true,&#10;  &quot;ButtonsInsideBorder&quot;: false,&#10;  &quot;NumColumns&quot;: 3,&#10;  &quot;ColumnWidthRatio&quot;: [&#10;    0.3333333333333333,&#10;    0.3333333333333333,&#10;    0.3333333333333333&#10;  ],&#10;  &quot;ListAreaOffset&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;ColumnRowPadding&quot;: [&#10;    0,&#10;    0,&#10;    0,&#10;    0&#10;  ],&#10;  &quot;SearchBarBounds&quot;: [&#10;    392,&#10;    5,&#10;    384,&#10;    30&#10;  ],&#10;  &quot;MoreButtonBounds&quot;: [],&#10;  &quot;SaveButtonBounds&quot;: [],&#10;  &quot;FavoriteButtonBounds&quot;: [&#10;    784,&#10;    7,&#10;    25,&#10;    25&#10;  ]&#10;}"
+                 textColour="4292532954"/>
+    </Component>
+    <Component type="ScriptPanel" id="SettingsPanel" x="0.0" y="0.0" width="1200.0"
+               height="220.0" bgColour="0" itemColour="0" itemColour2="0" textColour="0"
+               parentComponent="PopupHolder" visible="0">
+      <Component type="ScriptImage" id="SettingsBackground" x="0.0" y="0.0" parentComponent="SettingsPanel"
+                 width="1200.0" height="220.0" fileName="{PROJECT_FOLDER}PopupBackground1.png"/>
+      <Component type="ScriptFloatingTile" id="SettingsTile3" x="803.0" y="46.0"
+                 parentComponent="SettingsPanel" ContentType="CustomSettings"
+                 bgColour="3087007744" itemColour="4294947525" itemColour2="4294947525"
+                 Data="{&#10;  &quot;Driver&quot;: false,&#10;  &quot;Device&quot;: false,&#10;  &quot;Output&quot;: false,&#10;  &quot;BufferSize&quot;: false,&#10;  &quot;SampleRate&quot;: false,&#10;  &quot;GlobalBPM&quot;: false,&#10;  &quot;StreamingMode&quot;: false,&#10;  &quot;ScaleFactor&quot;: false,&#10;  &quot;VoiceAmountMultiplier&quot;: false,&#10;  &quot;ClearMidiCC&quot;: true,&#10;  &quot;SampleLocation&quot;: true,&#10;  &quot;DebugMode&quot;: false,&#10;  &quot;UseOpenGL&quot;: false,&#10;  &quot;ScaleFactorList&quot;: [&#10;    0.5,&#10;    0.75,&#10;    1.0,&#10;    1.25,&#10;    1.5,&#10;    2.0&#10;  ]&#10;}"
+                 width="360.0" height="150.0" textColour="4294947525" itemColour3="4294947525"/>
+      <Component type="ScriptFloatingTile" id="SettingsTile2" x="327.0" y="22.0"
+                 parentComponent="SettingsPanel" ContentType="CustomSettings"
+                 bgColour="3087007744" itemColour="4294947525" itemColour2="4294947525"
+                 Data="{&#10;  &quot;Driver&quot;: false,&#10;  &quot;Device&quot;: false,&#10;  &quot;Output&quot;: false,&#10;  &quot;BufferSize&quot;: false,&#10;  &quot;SampleRate&quot;: true,&#10;  &quot;GlobalBPM&quot;: true,&#10;  &quot;StreamingMode&quot;: true,&#10;  &quot;ScaleFactor&quot;: true,&#10;  &quot;VoiceAmountMultiplier&quot;: false,&#10;  &quot;ClearMidiCC&quot;: false,&#10;  &quot;SampleLocation&quot;: false,&#10;  &quot;DebugMode&quot;: false,&#10;  &quot;UseOpenGL&quot;: false,&#10;  &quot;ScaleFactorList&quot;: [&#10;    0.5,&#10;    0.75,&#10;    1.0,&#10;    1.25,&#10;    1.5,&#10;    2.0&#10;  ]&#10;}"
+                 width="462.0" height="190.0" textColour="4294947525" itemColour3="4294947525"/>
+      <Component type="ScriptFloatingTile" id="SettingsTile1" x="-57.0" y="2.0"
+                 parentComponent="SettingsPanel" ContentType="CustomSettings"
+                 bgColour="0" itemColour="4294947525" itemColour2="4294947525"
+                 Data="{&#10;  &quot;Driver&quot;: true,&#10;  &quot;Device&quot;: true,&#10;  &quot;Output&quot;: true,&#10;  &quot;BufferSize&quot;: true,&#10;  &quot;SampleRate&quot;: false,&#10;  &quot;GlobalBPM&quot;: false,&#10;  &quot;StreamingMode&quot;: false,&#10;  &quot;ScaleFactor&quot;: false,&#10;  &quot;VoiceAmountMultiplier&quot;: true,&#10;  &quot;ClearMidiCC&quot;: false,&#10;  &quot;SampleLocation&quot;: false,&#10;  &quot;DebugMode&quot;: false,&#10;  &quot;UseOpenGL&quot;: false,&#10;  &quot;ScaleFactorList&quot;: [&#10;    0.5,&#10;    0.75,&#10;    1.0,&#10;    1.25,&#10;    1.5,&#10;    2.0&#10;  ]&#10;}"
+                 width="462.0" height="210.0" textColour="4294947525" itemColour3="4294947525"/>
+    </Component>
+  </Component>
+  <Component type="ScriptButton" id="PowerButton0" x="12.0" y="104.0" width="16.0"
+             height="16.0" itemColour="0" itemColour2="0" bgColour="0" textColour="0"
+             filmstripImage="{PROJECT_FOLDER}Powerbutton.png" scaleFactor="0.5"
+             isPluginParameter="1" pluginParameterName="Power - Sampler 1"
+             tooltip="Power - Sampler 1"/>
+  <Component type="ScriptButton" id="PowerButton1" x="312.0" y="104.0" width="16.0"
+             height="16.0" itemColour="0" itemColour2="0" bgColour="0" textColour="0"
+             filmstripImage="{PROJECT_FOLDER}Powerbutton.png" scaleFactor="0.5"
+             isPluginParameter="1" pluginParameterName="Power - Sampler 2"
+             tooltip="Power - Sampler 2"/>
+  <Component type="ScriptButton" id="PowerButton2" x="612.0" y="104.0" width="16.0"
+             height="16.0" itemColour="0" itemColour2="0" bgColour="0" textColour="0"
+             filmstripImage="{PROJECT_FOLDER}Powerbutton.png" scaleFactor="0.5"
+             isPluginParameter="1" pluginParameterName="Power - Sampler 3"
+             tooltip="Power - Sampler 3"/>
+  <Component type="ScriptButton" id="PowerButton3" x="912.0" y="104.0" width="16.0"
+             height="16.0" itemColour="0" itemColour2="0" bgColour="0" textColour="0"
+             filmstripImage="{PROJECT_FOLDER}Powerbutton.png" scaleFactor="0.5"
+             isPluginParameter="1" pluginParameterName="Power - Sampler 4"
+             tooltip="Power - Sampler 4"/>
+  <Component type="ScriptPanel" id="HidePanel" x="0.0" y="395.0" width="1200.0"
+             height="305.0" bgColour="4278190080" itemColour="4294967295"
+             itemColour2="4294967295" textColour="16777215" visible="0">
+    <Component type="ScriptSlider" id="PowerGainknb1" x="60.0" y="-345.0" processorId="PowerGain1"
+               parameterId="Gain" mode="Decibel" min="-100.0" max="0.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-18.0" parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="PowerGainknb2" x="319.0" y="-345.0" processorId="PowerGain2"
+               parameterId="Gain" mode="Decibel" min="-100.0" max="0.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-18.0" parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="PowerGainknb3" x="620.0" y="-345.0" processorId="PowerGain3"
+               parameterId="Gain" mode="Decibel" min="-100.0" max="0.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-18.0" parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="PowerGainknb4" x="917.0" y="-345.0" processorId="PowerGain4"
+               parameterId="Gain" mode="Decibel" min="-100.0" max="0.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-18.0" parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="AttackHide1" x="10.0" y="25.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope1" parameterId="Attack"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="20.0" parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="AttackHide2" x="95.0" y="25.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope2" parameterId="Attack"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="20.0" parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="AttackHide3" x="184.0" y="25.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope3" parameterId="Attack"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="20.0" parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="AttackHide4" x="272.0" y="25.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope4" parameterId="Attack"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="20.0" parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="HoldHide1" x="20.0" y="83.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope1" parameterId="Hold"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="HoldHide2" x="111.0" y="83.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope2" parameterId="Hold"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="HoldHide3" x="210.0" y="83.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope3" parameterId="Hold"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="HoldHide4" x="276.0" y="83.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope4" parameterId="Hold"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="DecayHide1" x="22.0" y="145.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope1" parameterId="Decay"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="DecayHide2" x="111.0" y="145.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope2" parameterId="Decay"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="DecayHide3" x="239.0" y="145.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope3" parameterId="Decay"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="DecayHide4" x="309.0" y="145.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope4" parameterId="Decay"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="SustainHide1" x="26.0" y="199.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope1" parameterId="Sustain"
+               mode="Decibel" min="-100.0" max="0.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-18.0" parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="SustainHide2" x="119.0" y="199.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope2" parameterId="Sustain"
+               mode="Decibel" min="-100.0" max="0.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-18.0" parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="SustainHide3" x="227.0" y="199.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope3" parameterId="Sustain"
+               mode="Decibel" min="-100.0" max="0.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-18.0" parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="SustainHide4" x="317.0" y="199.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope4" parameterId="Sustain"
+               mode="Decibel" min="-100.0" max="0.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-18.0" parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="ReleaseHide1" x="30.0" y="245.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope1" parameterId="Release"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="20000.0" parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="ReleaseHide2" x="127.0" y="245.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope2" parameterId="Release"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="20000.0" parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="ReleaseHide3" x="243.0" y="245.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope3" parameterId="Release"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="20000.0" parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="ReleaseHide4" x="332.0" y="245.0" width="70.0"
+               height="40.0" processorId="AHDSR Envelope4" parameterId="Release"
+               mode="Time" max="20000.0" stepSize="1.0" suffix=" ms" middlePosition="1000.0"
+               defaultValue="20000.0" parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="EQBoostknb" x="590.0" y="15.0" width="70.0"
+               height="40.0" processorId="BoostEQ" parameterId="Gain" mode="Decibel"
+               max="12.0" stepSize="0.1000000014901161" suffix=" dB" middlePosition="3.0"
+               parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="Saturationknb" x="592.0" y="69.0" width="70.0"
+               height="40.0" processorId="Saturator" parameterId="Saturation"
+               mode="NormalizedPercentage" suffix="%" middlePosition="0.1500000059604645"
+               max="0.5" parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="ChorusWideknb" x="680.0" y="15.0" width="70.0"
+               height="40.0" max="0.1500000059604645" mode="NormalizedPercentage"
+               parentComponent="HidePanel" processorId="Chorus" parameterId="Width"/>
+    <Component type="ScriptSlider" id="ChorusRateknb" x="690.0" y="75.0" width="70.0"
+               height="40.0" processorId="Chorus" parameterId="Rate" mode="NormalizedPercentage"
+               suffix="%" middlePosition="0.5" max="0.6000000238418579" parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="Compressorknb" x="600.0" y="135.0" width="70.0"
+               height="40.0" processorId="Compressor" parameterId="CompressorThreshold"
+               mode="Decibel" min="-20.0" max="0.0" stepSize="0.1000000014901161"
+               suffix=" dB" middlePosition="-5.0" parentComponent="HidePanel"/>
+    <Component type="ScriptSlider" id="Widethknb" x="690.0" y="135.0" width="70.0"
+               height="40.0" max="200.0" middlePosition="100.0" parentComponent="HidePanel"
+               processorId="Width" parameterId="Width"/>
+  </Component>
+</ContentProperties>
